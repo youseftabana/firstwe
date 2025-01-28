@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:burlywood;
+}
+.TT {
+    text-align: center;
+    color: rgb(3 19 28);
+}
+.py{
+    animation: pluse 3s infinite;
+}
+@keyframes pluse {
+    from{
+        color: #1d73cf ;
+    }
+    to{
+        color: rgb(63, 51, 240);
+    }
+    to{
+        color: rgb(30, 98, 167);
+    }
+    to{
+        color:rgb(40, 4, 70);
+    }
+    /*to{
+        color:rgb(155, 51, 240);
+    }*/
+    /*to{
+        color: rgb(51, 101, 240);
+    }*/
+    to{
+        color: #071524;
+    }
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+section {
+    padding: 100px 85px;
+}
+section div {
+    padding-top: 60px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    background: url(CSS/images/codder\ -\ Shortcut\ \(6\).lnk) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 2px;
+    margin-bottom: 30px;
+}
+
+.main h3 span {
+    color: #c70b0bc0;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 15px;
+    line-height: 1.6;
+    display: inline-block;
+}
+
+.main-btn {
+    color: #fff;
+    background-color:rgba(255, 255, 255, 0.178);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 33px;
+    transition: .7 ease;
+    transition-duration: .4s;
+
+}
+
+.main-btn:hover {
+    background-color: #b19910;
+    /*transform: scale(1.1);*/
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: underline;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+}
+
+.navigation {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul a {
+    display: block;
+}
+
+header nav ul a.active,
+header nav ul a:hover{
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+header nav .toggle-menu{
+    color: white;
+    font-size: 22px;
+}
+
+@media(min-width:768px){
+    header nav .toggle-menu{
+        display: none;
+    }
+}
+.navigation a{
+    text-align: center;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #6f7b9c;
+    padding-left: 20px;
+}
+
+@media(max-width:767px){
+    header .logo {
+        font-size:12px;
+    }
+    header .TT {
+        font-size:18px;
+    }
+    header nav a {
+        display: none;
+        margin-top: 50px;
+    }
+    .main h3 span {
+        font-size: 1em;
+    }
+    .main h3 {
+        font-weight: bold;
+    }
+    .main-btn{
+        font-weight: 400;
+        font-size: .7em;
+    }
+    .social-icons a {
+        color: white;
+        font-size: 1em;
+        padding-right: 15px;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav .toggle-menu:hover + ul {
+        display: flex;
+        color: #b1991000;
+        flex-direction: column;
+        position: absolute;
+        font-size: small;
+        top: 100%;
+        right: 0;
+        width: 30%;
+        background-color: rgba(110, 107, 107, 0.664);
+    }
+}
+
+.dv1:hover {
+    margin-left: 10px;
+    color: #001550;
+}
+
+.dv2:hover {
+    margin-left: 10px;
+    color: #001550;
+}
+
+.dv3:hover {
+    margin-left: 10px;
+    color: #001550;
+}
+
+.bk {
+    margin: 0px;
+    margin-left: 25px;
+    width: 70px;
+}
+.insta:hover{
+    color: #796363c0;
+}
+.ink:hover{
+    color: #0a66c2;
+}
+.fbk:hover{
+    color: #385898;
+}
+.twt:hover{
+    color: rgb(29, 155, 240);
+}
+
+
+.one {
+    background-color: #eee;
+    width: 600px;
+    padding: 10px;
+    float: left;
+    position: relative;
+    font-size: 18PX;
+}
+
+.one::before {
+    content: "";
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #8a8a8a transparent transparent;
+}
+
+.one:hover::before {
+    display: block;
+}
+
+.one::after {
+    content: counter(members-counter);
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background: #d9d9d9;
+    color: white;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.user {
+    font-size: 25px;
+    padding: 50px;
+    float: left;
+    margin-right: 53px;
+    /* background-color: #eee; */
+    text-align: center;
+    width: 50px;
+    height: 55.5px;
+    /* overflow: hidden; */
+    font-size: medium;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+@media (max-width:1023px){
+    header{
+        padding:12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    
+    .main-contant h2 {
+        font-size: 1em;
+    }
+    .pre1,
+    .pre2{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+}
+@media(min-width:768px){
+    header nav .toggle-menu{
+        display: none;
+    }
+}
